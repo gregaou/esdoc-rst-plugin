@@ -1,0 +1,35 @@
+{
+  "name": "esdoc-rst-plugin",
+  "version": "0.1.1",
+  "description": "RST Plugin For ESDoc",
+  "author": "gregaou",
+  "homepage": "https://github.com/gregaou/esdoc-rst-plugin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregaou/esdoc-rst-plugin"
+  },
+  "scripts": {
+    "build": "node ./script/build.js || true",
+    "esdoc": "./node_modules/.bin/esdoc -c esdoc.json || true",
+    "update-doc": "node ./script/update-doc.js || true"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "fs-extra": "^1.0.0"
+  },
+  "keywords": [
+    "esdoc",
+    "rst"
+  ],
+  "files": [
+    "out/src",
+    "README.md"
+  ],
+  "main": "out/src/Plugin.js",
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "mkpath": "^1.0.0"
+  }
+}
